@@ -91,7 +91,7 @@ function inject(){
     var hd=document.head;while(hd.firstChild)hd.removeChild(hd.firstChild);
     var bd=document.body;while(bd.firstChild)bd.removeChild(bd.firstChild);
     bd.appendChild(doc.body);
-    var c=document.createElement("link");c.rel="canonical";c.href=location.origin+location.pathname;document.head.appendChild(c);
+    var c=document.createElement("link");c.rel="canonical";c.href=location.origin+"/";document.head.appendChild(c);
     if(__FAVICON__){var f=document.createElement("link");f.rel="icon";f.href=__FAVICON__;document.head.appendChild(f);}
     go();
   }catch(e){if(window.console)console.error(e);}
